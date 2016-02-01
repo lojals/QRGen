@@ -44,16 +44,60 @@ class MenuViewController: UIViewController {
         self.view.addSubview(container)
         
         let logo = UIImageView(image: UIImage(named: "intro"))
-        self.view.addSubview(logo)
+        logo.tag = 1
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(logo)
+        
+        
+        let btnCreate = UIButton()
+        btnCreate.tag = 2
+        btnCreate.translatesAutoresizingMaskIntoConstraints = false
+        btnCreate.setImage(UIImage(named: "Btn_create"), forState: .Normal)
+        container.addSubview(btnCreate)
+        
+        let line = UIImageView(image: UIImage(named: "Line"))
+        line.tag = 3
+        line.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(line)
+        
+        let btnRead = UIButton()
+        btnRead.tag = 4
+        btnRead.translatesAutoresizingMaskIntoConstraints = false
+        btnRead.setImage(UIImage(named: "Btn_read"), forState: .Normal)
+        container.addSubview(btnRead)
+        
+        
+        let cc = UIImageView(image: UIImage(named: "cc"))
+        cc.tag = 5
+        cc.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(cc)
         
         self.addConstraints()
     }
     
     func addConstraints(){
-        self.view.addConstraint(NSLayoutConstraint(item: self, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: self, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1, constant: 0))
-        container.addConstraint(NSLayoutConstraint(item: self, attribute: .Width,   relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 226))
-        container.addConstraint(NSLayoutConstraint(item: self, attribute: .Height,  relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 380))
+        self.view.addConstraint(NSLayoutConstraint(item: self.container, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.container, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1, constant: 0))
+        container.addConstraint(NSLayoutConstraint(item: self.container, attribute: .Width,   relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 226))
+        container.addConstraint(NSLayoutConstraint(item: self.container, attribute: .Height,  relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 380))
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(1)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(1)!, attribute: .Top, relatedBy: .Equal, toItem: self.container, attribute: .Top, multiplier: 1, constant: 0))
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(2)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(2)!, attribute: .Top, relatedBy: .Equal, toItem: self.container.viewWithTag(1), attribute: .Bottom, multiplier: 1, constant: 73))
+        
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(3)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(3)!, attribute: .Top, relatedBy: .Equal, toItem: self.container.viewWithTag(2), attribute: .Bottom, multiplier: 1, constant: 32))
+        
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(4)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(4)!, attribute: .Top, relatedBy: .Equal, toItem: self.container.viewWithTag(3), attribute: .Bottom, multiplier: 1, constant: 32))
+        
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.view.viewWithTag(5)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.view.viewWithTag(5)!, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1, constant: -13))
         
     }
     
