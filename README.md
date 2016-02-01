@@ -1,0 +1,2 @@
+# QRGen
+Read/Generate QRCodes
