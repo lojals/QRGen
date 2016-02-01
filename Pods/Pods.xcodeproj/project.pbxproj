@@ -1,0 +1,1085 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8EB909B3BB058033BBEFEB347C4D24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		144405A414830766CD06305169178402 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69007A5FDF6F3CEDBD0B53C81BF05B0 /* CGRectEx.swift */; };
+		2A7CDE7B2BED1214970C50D31E083CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		4244375967A72339B965317FB0B307AD /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D98BF1780EABC25FBCF7AE4744C87EF /* ArrayEx.swift */; };
+		4AAFE6E2D50A6B7DC2F550D51FFA0EC0 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 176BBF681AD90DDE2106970320D72A6B /* star.png */; };
+		5063484A2BE885E47EA5663FC3595AE9 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CA87D3C61E4C0D7DA86C5F59141B32 /* confetti.png */; };
+		5B1B0DFA5992BEC49C21581B730FEB7A /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4F33E1CF755DBA63BCA2C00C25924 /* CIColorExtension.swift */; };
+		5FBBB3A122CEA1951C3104AEA6F5100C /* LiquidFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 531ADC0DD2821E02037767A588579708 /* LiquidFloatingActionButton-dummy.m */; };
+		72042359B6606B6363E495430D780479 /* LiquidFloatingActionButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BCF35AF94AC1E53F772D5C3BC8B87 /* LiquidFloatingActionButton.bundle */; };
+		7C4A7782F2A3F28C5A5E5C751406E528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		8990DD6179E48B4AA99CBEAAA53D1B26 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */; };
+		A0F70D1AC3D0AAB7A74F6594B4669BCA /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 374CA0C82F97FC92E4E6F3EDC6BBC01B /* diamond.png */; };
+		A23266EB5DB5607918308AC3107B6334 /* QRCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1725625A071F78BD3859F00033E71A6E /* QRCode-dummy.m */; };
+		A39A083701ECFB9964FB9608746C091D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD0565E8CB8309C24605547F8F3CCD /* UIImageViewExtension.swift */; };
+		A43603F6E38257504AA684BA2ECBE419 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E484070C670823C5D1D8CED509E8E65 /* QRCode.swift */; };
+		AA75E36C6F8E3FDC9A945E4A8E183D6C /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0A3342B08538673A2E9E6B77BC034 /* SAConfettiView.swift */; };
+		AE59C3FD0BEF00C2CCAB0E64C00EC6F2 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D8C39B21270595FA08B5242DF62D /* LiquidUtil.swift */; };
+		AF71B63F7B7FB9C09F4A1424BAFE1360 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE19D952CEEB291F39C066EA308AB2 /* LiquidFloatingActionButton.swift */; };
+		AFD05B212EEC2B7CA4D71111ECC523B2 /* QRCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D25126DA64E8BFF7A0CB0F1DD97E9 /* QRCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B573967C712EBF82192949523E2BC524 /* SAConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F63D5B6300CB0F69F04F9F54B400F6C3 /* SAConfettiView.bundle */; };
+		BA98EBDB57D30CC7369E42012CB3FB34 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096F5DF60064C5F9E56D9FD3151815B /* CGPointEx.swift */; };
+		BB4331683DF8D652DD7B4DFE57125A5D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFAB0044024F7C941D5B108D8A6E28C /* triangle.png */; };
+		BCD46D72F2A27D0DF398386FF30B8F26 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0C9F78333E7A86F9EDC1BB73BDD98 /* LiquittableCircle.swift */; };
+		C0B919C58AF7B1F6B276EB6B3521F83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		C294B075CADBA600B61C172DE34FF90A /* Pods-QRGen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65160602AB2A11A8CA66E29A4E456A7A /* Pods-QRGen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4FEAF2CA4767ADC63A245FED8BD2557 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		CD635561809D218A952928FCA3BC1B78 /* LiquidFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1A7D2AB3A198BCE2241A81582E74A6 /* LiquidFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D57B77141D80A1AB50DCBFE2D55727B7 /* SAConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCA5B82BCF35D62F1A09FE878C7A089 /* SAConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB0D31FDF40C1AE86E988CAB5F7D6578 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDABD177BDA665973AE77D52A03833E /* SimpleCircleLiquidEngine.swift */; };
+		EFD63D9EF8A0692453CCBCAEBA571D76 /* SAConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDB68254A60726F1E02BBBB595FF3F /* SAConfettiView-dummy.m */; };
+		FA8BEA973734B5F8191F09B6FBFC62B4 /* Pods-QRGen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5D8531C6F259E9BFBB38A1ADDFA9B /* Pods-QRGen-dummy.m */; };
+		FF747B3BDF1D1DDF633B9FEBFA9C15ED /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C412210E74E6C718D9C6450EBDB7E /* UIColorEx.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		241D7E67C3518A9E632A0EDFC7D211A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4A37C88D68A62EA5C1BC7A2A4D19AE;
+			remoteInfo = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+		};
+		30B9F00B7F0F012AC45E55FE0644B6D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCBFC87A0818F9397E8528AAC2DC9A1;
+			remoteInfo = SAConfettiView;
+		};
+		A46ADA6503F2A59C7619FB23C90E5C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFA4D18A1496A9959093E278EB82FEE;
+			remoteInfo = "SAConfettiView-SAConfettiView";
+		};
+		D34D3FA3F7B29A376CA52F9452B8A878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECB4143196184B0E0EA02182DB2B9CCA;
+			remoteInfo = LiquidFloatingActionButton;
+		};
+		DB081C750966DFFB51AA56B8F1920695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C878DAC2C6537EFEE6953F5D2B18FEC3;
+			remoteInfo = QRCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F29C351C8AF7D6D4BB19B2182DA322 /* Pods-QRGen-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRGen-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01D4F33E1CF755DBA63BCA2C00C25924 /* CIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = QRCode/CIColorExtension.swift; sourceTree = "<group>"; };
+		0B2BCF35AF94AC1E53F772D5C3BC8B87 /* LiquidFloatingActionButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidFloatingActionButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7748EEA3A0D192EBDC795742CE35B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		131C412210E74E6C718D9C6450EBDB7E /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
+		140ED67F9F8BE754B3554561F9A1D241 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1725625A071F78BD3859F00033E71A6E /* QRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCode-dummy.m"; sourceTree = "<group>"; };
+		176BBF681AD90DDE2106970320D72A6B /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = Pod/Assets/star.png; sourceTree = "<group>"; };
+		2FCA5B82BCF35D62F1A09FE878C7A089 /* SAConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		33BDD85F6CE7585A50830F21691D6842 /* Pods-QRGen-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRGen-acknowledgements.plist"; sourceTree = "<group>"; };
+		374CA0C82F97FC92E4E6F3EDC6BBC01B /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = Pod/Assets/diamond.png; sourceTree = "<group>"; };
+		381D25126DA64E8BFF7A0CB0F1DD97E9 /* QRCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-umbrella.h"; sourceTree = "<group>"; };
+		3A1A7D2AB3A198BCE2241A81582E74A6 /* LiquidFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		4227B7F8FCD032DE4BDB47FACF6380A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47731FE509F12AF152D63F16ECFD55CC /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E53B00BC1BC5F1294CED63C05AC7C46 /* QRCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-prefix.pch"; sourceTree = "<group>"; };
+		4EAE19D952CEEB291F39C066EA308AB2 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = Pod/Classes/LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		4F0163E92C60A9504292CB1CE3710FBC /* Pods-QRGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRGen.debug.xcconfig"; sourceTree = "<group>"; };
+		531ADC0DD2821E02037767A588579708 /* LiquidFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		59310F1121B66F98FC0AF2943071B2DD /* SAConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-prefix.pch"; sourceTree = "<group>"; };
+		5B9E9A2A521138B21770063E958584A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6096F5DF60064C5F9E56D9FD3151815B /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
+		63F0C9F78333E7A86F9EDC1BB73BDD98 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
+		65160602AB2A11A8CA66E29A4E456A7A /* Pods-QRGen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRGen-umbrella.h"; sourceTree = "<group>"; };
+		744CA953099B87E0A86B07FD2318D8E6 /* LiquidFloatingActionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidFloatingActionButton.xcconfig; sourceTree = "<group>"; };
+		7BB8D73B17E9E03EB0390FE86160803B /* Pods-QRGen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QRGen.modulemap"; sourceTree = "<group>"; };
+		7CCDB68254A60726F1E02BBBB595FF3F /* SAConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAConfettiView-dummy.m"; sourceTree = "<group>"; };
+		7D98BF1780EABC25FBCF7AE4744C87EF /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
+		7DDABD177BDA665973AE77D52A03833E /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		7E484070C670823C5D1D8CED509E8E65 /* QRCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = QRCode/QRCode.swift; sourceTree = "<group>"; };
+		7EE0BA79783E0D29133B53006969B2E9 /* Pods-QRGen-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRGen-resources.sh"; sourceTree = "<group>"; };
+		80318D123EE1A7B426E78283BAE15E85 /* SAConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAConfettiView.modulemap; sourceTree = "<group>"; };
+		81CA87D3C61E4C0D7DA86C5F59141B32 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = Pod/Assets/confetti.png; sourceTree = "<group>"; };
+		86F5D8531C6F259E9BFBB38A1ADDFA9B /* Pods-QRGen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRGen-dummy.m"; sourceTree = "<group>"; };
+		8D6BA105BD53D5FE0B78C05A463C628E /* SAConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAConfettiView.xcconfig; sourceTree = "<group>"; };
+		91413329813FA6FE5A78842159E69621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		99D9253F9A56C8DA613924E668356C01 /* Pods-QRGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRGen.release.xcconfig"; sourceTree = "<group>"; };
+		9E18D8C39B21270595FA08B5242DF62D /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
+		A4D0A3342B08538673A2E9E6B77BC034 /* SAConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAConfettiView.swift; path = Pod/Classes/SAConfettiView.swift; sourceTree = "<group>"; };
+		A5AD0565E8CB8309C24605547F8F3CCD /* UIImageViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = QRCode/UIImageViewExtension.swift; sourceTree = "<group>"; };
+		ACF5D72DE649C0266AF50321448CC4B7 /* LiquidFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		B7FE006948E5715243814BF10F49B5F1 /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FA69ECE53ED6DCFA68016F3EAC0F90 /* LiquidFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LiquidFloatingActionButton.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE70525A9B907238DA49C167B4636626 /* QRCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QRCode.modulemap; sourceTree = "<group>"; };
+		CCFAB0044024F7C941D5B108D8A6E28C /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = Pod/Assets/triangle.png; sourceTree = "<group>"; };
+		D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DA1DC5217815CC62779008288F35F61D /* QRCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCode.xcconfig; sourceTree = "<group>"; };
+		DAA3624C5E2DF3DC6199EDC187A839EB /* Pods_QRGen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRGen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E69007A5FDF6F3CEDBD0B53C81BF05B0 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		EC40E283CFBBC68BCFFFF2CF51D715DB /* Pods-QRGen-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRGen-frameworks.sh"; sourceTree = "<group>"; };
+		F63D5B6300CB0F69F04F9F54B400F6C3 /* SAConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF53CBF58105377E4F5D13219FFCA168 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01DF645B20C917440CB46C9A64526B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7CDE7B2BED1214970C50D31E083CAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EE5653C5344F25E6EAECA93959DFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4302103A9DE2B15248EC5DB29AA68C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FEAF2CA4767ADC63A245FED8BD2557 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87128665754338F169B98119F52291A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8EB909B3BB058033BBEFEB347C4D24 /* Foundation.framework in Frameworks */,
+				8990DD6179E48B4AA99CBEAAA53D1B26 /* QuartzCore.framework in Frameworks */,
+				C0B919C58AF7B1F6B276EB6B3521F83E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C569318E9E96F70CD9CEBE58BC0A7CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4A7782F2A3F28C5A5E5C751406E528 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBDDDF1754E9E660685F4BD66ECB19EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11248CB4568DB25CBA793A963FA5D02D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B9E9A2A521138B21770063E958584A8 /* Info.plist */,
+				BE70525A9B907238DA49C167B4636626 /* QRCode.modulemap */,
+				DA1DC5217815CC62779008288F35F61D /* QRCode.xcconfig */,
+				1725625A071F78BD3859F00033E71A6E /* QRCode-dummy.m */,
+				4E53B00BC1BC5F1294CED63C05AC7C46 /* QRCode-prefix.pch */,
+				381D25126DA64E8BFF7A0CB0F1DD97E9 /* QRCode-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QRCode";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16EB861BF1063AA1E13CB02AD787FE32 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCEE393AF1E4E8A6554B0243B7D5C347 /* Pods-QRGen */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2442C2E3C661A72CE4E5620A72A837F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81CA87D3C61E4C0D7DA86C5F59141B32 /* confetti.png */,
+				374CA0C82F97FC92E4E6F3EDC6BBC01B /* diamond.png */,
+				176BBF681AD90DDE2106970320D72A6B /* star.png */,
+				CCFAB0044024F7C941D5B108D8A6E28C /* triangle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		25B82F5BADB2352C30143FD0E805DFA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF9815BC53B38FA03B11D1024E0397C /* LiquidFloatingActionButton */,
+				C18A5D69632273D8D6B08D55A93B112E /* QRCode */,
+				7E66254C66A29419E3781097A9FC331B /* SAConfettiView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6EF9815BC53B38FA03B11D1024E0397C /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				7D98BF1780EABC25FBCF7AE4744C87EF /* ArrayEx.swift */,
+				6096F5DF60064C5F9E56D9FD3151815B /* CGPointEx.swift */,
+				E69007A5FDF6F3CEDBD0B53C81BF05B0 /* CGRectEx.swift */,
+				4EAE19D952CEEB291F39C066EA308AB2 /* LiquidFloatingActionButton.swift */,
+				9E18D8C39B21270595FA08B5242DF62D /* LiquidUtil.swift */,
+				63F0C9F78333E7A86F9EDC1BB73BDD98 /* LiquittableCircle.swift */,
+				7DDABD177BDA665973AE77D52A03833E /* SimpleCircleLiquidEngine.swift */,
+				131C412210E74E6C718D9C6450EBDB7E /* UIColorEx.swift */,
+				B590CD4531482280A8465418F60A5131 /* Support Files */,
+			);
+			path = LiquidFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				25B82F5BADB2352C30143FD0E805DFA2 /* Pods */,
+				E128488891CFCE9F4A6692C3C5EE2EBA /* Products */,
+				16EB861BF1063AA1E13CB02AD787FE32 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E66254C66A29419E3781097A9FC331B /* SAConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				A4D0A3342B08538673A2E9E6B77BC034 /* SAConfettiView.swift */,
+				2442C2E3C661A72CE4E5620A72A837F8 /* Resources */,
+				B57B83BBBCBA07A4C0884949B2880D79 /* Support Files */,
+			);
+			path = SAConfettiView;
+			sourceTree = "<group>";
+		};
+		B57B83BBBCBA07A4C0884949B2880D79 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4227B7F8FCD032DE4BDB47FACF6380A4 /* Info.plist */,
+				80318D123EE1A7B426E78283BAE15E85 /* SAConfettiView.modulemap */,
+				8D6BA105BD53D5FE0B78C05A463C628E /* SAConfettiView.xcconfig */,
+				7CCDB68254A60726F1E02BBBB595FF3F /* SAConfettiView-dummy.m */,
+				59310F1121B66F98FC0AF2943071B2DD /* SAConfettiView-prefix.pch */,
+				2FCA5B82BCF35D62F1A09FE878C7A089 /* SAConfettiView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAConfettiView";
+			sourceTree = "<group>";
+		};
+		B590CD4531482280A8465418F60A5131 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F7748EEA3A0D192EBDC795742CE35B7 /* Info.plist */,
+				B8FA69ECE53ED6DCFA68016F3EAC0F90 /* LiquidFloatingActionButton.modulemap */,
+				744CA953099B87E0A86B07FD2318D8E6 /* LiquidFloatingActionButton.xcconfig */,
+				531ADC0DD2821E02037767A588579708 /* LiquidFloatingActionButton-dummy.m */,
+				ACF5D72DE649C0266AF50321448CC4B7 /* LiquidFloatingActionButton-prefix.pch */,
+				3A1A7D2AB3A198BCE2241A81582E74A6 /* LiquidFloatingActionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LiquidFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		C18A5D69632273D8D6B08D55A93B112E /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				01D4F33E1CF755DBA63BCA2C00C25924 /* CIColorExtension.swift */,
+				7E484070C670823C5D1D8CED509E8E65 /* QRCode.swift */,
+				A5AD0565E8CB8309C24605547F8F3CCD /* UIImageViewExtension.swift */,
+				11248CB4568DB25CBA793A963FA5D02D /* Support Files */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		CCEE393AF1E4E8A6554B0243B7D5C347 /* Pods-QRGen */ = {
+			isa = PBXGroup;
+			children = (
+				FF53CBF58105377E4F5D13219FFCA168 /* Info.plist */,
+				7BB8D73B17E9E03EB0390FE86160803B /* Pods-QRGen.modulemap */,
+				00F29C351C8AF7D6D4BB19B2182DA322 /* Pods-QRGen-acknowledgements.markdown */,
+				33BDD85F6CE7585A50830F21691D6842 /* Pods-QRGen-acknowledgements.plist */,
+				86F5D8531C6F259E9BFBB38A1ADDFA9B /* Pods-QRGen-dummy.m */,
+				EC40E283CFBBC68BCFFFF2CF51D715DB /* Pods-QRGen-frameworks.sh */,
+				7EE0BA79783E0D29133B53006969B2E9 /* Pods-QRGen-resources.sh */,
+				65160602AB2A11A8CA66E29A4E456A7A /* Pods-QRGen-umbrella.h */,
+				4F0163E92C60A9504292CB1CE3710FBC /* Pods-QRGen.debug.xcconfig */,
+				99D9253F9A56C8DA613924E668356C01 /* Pods-QRGen.release.xcconfig */,
+			);
+			name = "Pods-QRGen";
+			path = "Target Support Files/Pods-QRGen";
+			sourceTree = "<group>";
+		};
+		DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				91413329813FA6FE5A78842159E69621 /* Foundation.framework */,
+				E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */,
+				D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E128488891CFCE9F4A6692C3C5EE2EBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B2BCF35AF94AC1E53F772D5C3BC8B87 /* LiquidFloatingActionButton.bundle */,
+				47731FE509F12AF152D63F16ECFD55CC /* LiquidFloatingActionButton.framework */,
+				DAA3624C5E2DF3DC6199EDC187A839EB /* Pods_QRGen.framework */,
+				140ED67F9F8BE754B3554561F9A1D241 /* QRCode.framework */,
+				F63D5B6300CB0F69F04F9F54B400F6C3 /* SAConfettiView.bundle */,
+				B7FE006948E5715243814BF10F49B5F1 /* SAConfettiView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04F4D890D5EF6701EE30839AB00ACB8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD635561809D218A952928FCA3BC1B78 /* LiquidFloatingActionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D85538E094965B15B93FA5F797BC54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57B77141D80A1AB50DCBFE2D55727B7 /* SAConfettiView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E145077B5E0988400B05A1D0CB11AC5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD05B212EEC2B7CA4D71111ECC523B2 /* QRCode-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E453385D4C9E661567983ACE803EA299 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C294B075CADBA600B61C172DE34FF90A /* Pods-QRGen-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E4A37C88D68A62EA5C1BC7A2A4D19AE /* LiquidFloatingActionButton-LiquidFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBC67EBFEEE1117389429AE8C14564B /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-LiquidFloatingActionButton" */;
+			buildPhases = (
+				64C51C33B8DFC1470D2FE029A6D45D18 /* Sources */,
+				23EE5653C5344F25E6EAECA93959DFD7 /* Frameworks */,
+				1714DC3BD0B3E16B173A88A655453C03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			productName = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			productReference = 0B2BCF35AF94AC1E53F772D5C3BC8B87 /* LiquidFloatingActionButton.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ACCBFC87A0818F9397E8528AAC2DC9A1 /* SAConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD850C569A4E3F48AE5CECCC077D96F6 /* Build configuration list for PBXNativeTarget "SAConfettiView" */;
+			buildPhases = (
+				DD4B77934D2C94214E75E9CA65D2BDF0 /* Sources */,
+				87128665754338F169B98119F52291A5 /* Frameworks */,
+				E5FA133494D3D91A2427C00403181211 /* Resources */,
+				15D85538E094965B15B93FA5F797BC54 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD458C0F5FCB7BC477D204F550E36754 /* PBXTargetDependency */,
+			);
+			name = SAConfettiView;
+			productName = SAConfettiView;
+			productReference = B7FE006948E5715243814BF10F49B5F1 /* SAConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B319F647A2CEB2E871A6B2E3E05334F7 /* Pods-QRGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1228529829DF5F314C053B88CBCD0ED /* Build configuration list for PBXNativeTarget "Pods-QRGen" */;
+			buildPhases = (
+				9D03EEE671744A677C11BCC89E27CBEC /* Sources */,
+				01DF645B20C917440CB46C9A64526B1D /* Frameworks */,
+				E453385D4C9E661567983ACE803EA299 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D2D35AFDBC4EFCD86DA3DF7E3EC359 /* PBXTargetDependency */,
+				97FE2B7C44604653EFA1DEDEE70FA541 /* PBXTargetDependency */,
+				A468EC90FB88C3B0884C0F5CFE1EC6C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-QRGen";
+			productName = "Pods-QRGen";
+			productReference = DAA3624C5E2DF3DC6199EDC187A839EB /* Pods_QRGen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C878DAC2C6537EFEE6953F5D2B18FEC3 /* QRCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46FE256552E806EF25009171A0847CCA /* Build configuration list for PBXNativeTarget "QRCode" */;
+			buildPhases = (
+				7B8B5874B6DFCBFC90364C329C44AC69 /* Sources */,
+				4D4302103A9DE2B15248EC5DB29AA68C /* Frameworks */,
+				E145077B5E0988400B05A1D0CB11AC5F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCode;
+			productName = QRCode;
+			productReference = 140ED67F9F8BE754B3554561F9A1D241 /* QRCode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFFA4D18A1496A9959093E278EB82FEE /* SAConfettiView-SAConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679C1B8EB44BFCE2A9DD4F1372D906D6 /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */;
+			buildPhases = (
+				116524D11FBEB28A9532C00301C78C97 /* Sources */,
+				BBDDDF1754E9E660685F4BD66ECB19EC /* Frameworks */,
+				D5BB085A9C60930D9233E44B4CEE05A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAConfettiView-SAConfettiView";
+			productName = "SAConfettiView-SAConfettiView";
+			productReference = F63D5B6300CB0F69F04F9F54B400F6C3 /* SAConfettiView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ECB4143196184B0E0EA02182DB2B9CCA /* LiquidFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B577CF2C4C8B7512267A39C5C0849B6 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */;
+			buildPhases = (
+				CE1D12580B1F9E78D08AD84F59312FEE /* Sources */,
+				8C569318E9E96F70CD9CEBE58BC0A7CC /* Frameworks */,
+				4695172BA8D46356F072851DA9ED351D /* Resources */,
+				04F4D890D5EF6701EE30839AB00ACB8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE7CB5B7883807D0DC3EFE58E8F5318 /* PBXTargetDependency */,
+			);
+			name = LiquidFloatingActionButton;
+			productName = LiquidFloatingActionButton;
+			productReference = 47731FE509F12AF152D63F16ECFD55CC /* LiquidFloatingActionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E128488891CFCE9F4A6692C3C5EE2EBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECB4143196184B0E0EA02182DB2B9CCA /* LiquidFloatingActionButton */,
+				2E4A37C88D68A62EA5C1BC7A2A4D19AE /* LiquidFloatingActionButton-LiquidFloatingActionButton */,
+				B319F647A2CEB2E871A6B2E3E05334F7 /* Pods-QRGen */,
+				C878DAC2C6537EFEE6953F5D2B18FEC3 /* QRCode */,
+				ACCBFC87A0818F9397E8528AAC2DC9A1 /* SAConfettiView */,
+				DFFA4D18A1496A9959093E278EB82FEE /* SAConfettiView-SAConfettiView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1714DC3BD0B3E16B173A88A655453C03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4695172BA8D46356F072851DA9ED351D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72042359B6606B6363E495430D780479 /* LiquidFloatingActionButton.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BB085A9C60930D9233E44B4CEE05A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5063484A2BE885E47EA5663FC3595AE9 /* confetti.png in Resources */,
+				A0F70D1AC3D0AAB7A74F6594B4669BCA /* diamond.png in Resources */,
+				4AAFE6E2D50A6B7DC2F550D51FFA0EC0 /* star.png in Resources */,
+				BB4331683DF8D652DD7B4DFE57125A5D /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FA133494D3D91A2427C00403181211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B573967C712EBF82192949523E2BC524 /* SAConfettiView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		116524D11FBEB28A9532C00301C78C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C51C33B8DFC1470D2FE029A6D45D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8B5874B6DFCBFC90364C329C44AC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1B0DFA5992BEC49C21581B730FEB7A /* CIColorExtension.swift in Sources */,
+				A23266EB5DB5607918308AC3107B6334 /* QRCode-dummy.m in Sources */,
+				A43603F6E38257504AA684BA2ECBE419 /* QRCode.swift in Sources */,
+				A39A083701ECFB9964FB9608746C091D /* UIImageViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03EEE671744A677C11BCC89E27CBEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8BEA973734B5F8191F09B6FBFC62B4 /* Pods-QRGen-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1D12580B1F9E78D08AD84F59312FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4244375967A72339B965317FB0B307AD /* ArrayEx.swift in Sources */,
+				BA98EBDB57D30CC7369E42012CB3FB34 /* CGPointEx.swift in Sources */,
+				144405A414830766CD06305169178402 /* CGRectEx.swift in Sources */,
+				5FBBB3A122CEA1951C3104AEA6F5100C /* LiquidFloatingActionButton-dummy.m in Sources */,
+				AF71B63F7B7FB9C09F4A1424BAFE1360 /* LiquidFloatingActionButton.swift in Sources */,
+				AE59C3FD0BEF00C2CCAB0E64C00EC6F2 /* LiquidUtil.swift in Sources */,
+				BCD46D72F2A27D0DF398386FF30B8F26 /* LiquittableCircle.swift in Sources */,
+				DB0D31FDF40C1AE86E988CAB5F7D6578 /* SimpleCircleLiquidEngine.swift in Sources */,
+				FF747B3BDF1D1DDF633B9FEBFA9C15ED /* UIColorEx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4B77934D2C94214E75E9CA65D2BDF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD63D9EF8A0692453CCBCAEBA571D76 /* SAConfettiView-dummy.m in Sources */,
+				AA75E36C6F8E3FDC9A945E4A8E183D6C /* SAConfettiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97FE2B7C44604653EFA1DEDEE70FA541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCode;
+			target = C878DAC2C6537EFEE6953F5D2B18FEC3 /* QRCode */;
+			targetProxy = DB081C750966DFFB51AA56B8F1920695 /* PBXContainerItemProxy */;
+		};
+		A468EC90FB88C3B0884C0F5CFE1EC6C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAConfettiView;
+			target = ACCBFC87A0818F9397E8528AAC2DC9A1 /* SAConfettiView */;
+			targetProxy = 30B9F00B7F0F012AC45E55FE0644B6D3 /* PBXContainerItemProxy */;
+		};
+		C1D2D35AFDBC4EFCD86DA3DF7E3EC359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = ECB4143196184B0E0EA02182DB2B9CCA /* LiquidFloatingActionButton */;
+			targetProxy = D34D3FA3F7B29A376CA52F9452B8A878 /* PBXContainerItemProxy */;
+		};
+		CD458C0F5FCB7BC477D204F550E36754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SAConfettiView-SAConfettiView";
+			target = DFFA4D18A1496A9959093E278EB82FEE /* SAConfettiView-SAConfettiView */;
+			targetProxy = A46ADA6503F2A59C7619FB23C90E5C48 /* PBXContainerItemProxy */;
+		};
+		FAE7CB5B7883807D0DC3EFE58E8F5318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			target = 2E4A37C88D68A62EA5C1BC7A2A4D19AE /* LiquidFloatingActionButton-LiquidFloatingActionButton */;
+			targetProxy = 241D7E67C3518A9E632A0EDFC7D211A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A35E048E59668F5FD6CE46E7363C31C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744CA953099B87E0A86B07FD2318D8E6 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27B0FBFE8C9EFA26FD327675D36A754B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744CA953099B87E0A86B07FD2318D8E6 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		37A9EA66A61FF11E5E5FD0344D713478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6BA105BD53D5FE0B78C05A463C628E /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		55C9FE02C0B280C8E993B24853250945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744CA953099B87E0A86B07FD2318D8E6 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		74EA0F7EF20FF88BC097F5D290E54C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6BA105BD53D5FE0B78C05A463C628E /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7DBAF2FC457881F42EA80D8625556C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1DC5217815CC62779008288F35F61D /* QRCode.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCode/QRCode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCode/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCode/QRCode.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QRCode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		99F426CFAF294D431A3D86AC073E7E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D9253F9A56C8DA613924E668356C01 /* Pods-QRGen.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRGen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRGen/Pods-QRGen.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_QRGen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5DE7A6407A5DE14B25A05F245C0667E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1DC5217815CC62779008288F35F61D /* QRCode.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCode/QRCode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCode/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCode/QRCode.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QRCode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD93AA3CCC5AE639EDE57D73F21624FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6BA105BD53D5FE0B78C05A463C628E /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF2D702A339E95E04473297FD57C867A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744CA953099B87E0A86B07FD2318D8E6 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9DCE609CBA8E9C26DDFA44C4744FBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6BA105BD53D5FE0B78C05A463C628E /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4301B89BCDFD2FFBCC0B82CF0961D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0163E92C60A9504292CB1CE3710FBC /* Pods-QRGen.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRGen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRGen/Pods-QRGen.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_QRGen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBC67EBFEEE1117389429AE8C14564B /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B0FBFE8C9EFA26FD327675D36A754B /* Debug */,
+				55C9FE02C0B280C8E993B24853250945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46FE256552E806EF25009171A0847CCA /* Build configuration list for PBXNativeTarget "QRCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DE7A6407A5DE14B25A05F245C0667E /* Debug */,
+				7DBAF2FC457881F42EA80D8625556C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679C1B8EB44BFCE2A9DD4F1372D906D6 /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A9EA66A61FF11E5E5FD0344D713478 /* Debug */,
+				74EA0F7EF20FF88BC097F5D290E54C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B577CF2C4C8B7512267A39C5C0849B6 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A35E048E59668F5FD6CE46E7363C31C /* Debug */,
+				CF2D702A339E95E04473297FD57C867A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD850C569A4E3F48AE5CECCC077D96F6 /* Build configuration list for PBXNativeTarget "SAConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DCE609CBA8E9C26DDFA44C4744FBB3 /* Debug */,
+				CD93AA3CCC5AE639EDE57D73F21624FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1228529829DF5F314C053B88CBCD0ED /* Build configuration list for PBXNativeTarget "Pods-QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4301B89BCDFD2FFBCC0B82CF0961D09 /* Debug */,
+				99F426CFAF294D431A3D86AC073E7E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

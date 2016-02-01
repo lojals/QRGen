@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A748E821C5D7269002BBB1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A748E811C5D7269002BBB1F /* AppDelegate.swift */; };
+		7A748E841C5D7269002BBB1F /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A748E831C5D7269002BBB1F /* QRViewController.swift */; };
+		7A748E891C5D7269002BBB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A748E881C5D7269002BBB1F /* Assets.xcassets */; };
+		7A748E8C1C5D7269002BBB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A748E8A1C5D7269002BBB1F /* LaunchScreen.storyboard */; };
+		7A748E971C5D7269002BBB1F /* QRGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A748E961C5D7269002BBB1F /* QRGenTests.swift */; };
+		7A748EA21C5D7269002BBB1F /* QRGenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A748EA11C5D7269002BBB1F /* QRGenUITests.swift */; };
+		7A748EB01C5D7FD6002BBB1F /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A748EAF1C5D7FD6002BBB1F /* Gradient.swift */; };
+		7A748EBC1C5DAED4002BBB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EBB1C5DAED4002BBB1F /* Main.storyboard */; };
+		7A748EBE1C5EE0B0002BBB1F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A748EBD1C5EE0B0002BBB1F /* MenuViewController.swift */; };
+		7A748ECA1C5EEF63002BBB1F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EC21C5EEF63002BBB1F /* background.jpg */; };
+		7A748ED71C5EF0E9002BBB1F /* logo1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748ED11C5EF0E9002BBB1F /* logo1@3x.png */; };
+		7A748ED81C5EF0E9002BBB1F /* logo2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748ED21C5EF0E9002BBB1F /* logo2@3x.png */; };
+		7A748ED91C5EF0E9002BBB1F /* logo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748ED31C5EF0E9002BBB1F /* logo1@2x.png */; };
+		7A748EDA1C5EF0E9002BBB1F /* logo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748ED41C5EF0E9002BBB1F /* logo2@2x.png */; };
+		7A748EDB1C5EF0E9002BBB1F /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748ED51C5EF0E9002BBB1F /* logo1.png */; };
+		7A748EDC1C5EF0E9002BBB1F /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748ED61C5EF0E9002BBB1F /* logo2.png */; };
+		7A748EE71C5EFA7D002BBB1F /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EDE1C5EFA7D002BBB1F /* Line.png */; };
+		7A748EE81C5EFA7D002BBB1F /* Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EDF1C5EFA7D002BBB1F /* Line@2x.png */; };
+		7A748EE91C5EFA7D002BBB1F /* Line@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE01C5EFA7D002BBB1F /* Line@3x.png */; };
+		7A748EEA1C5EFA7D002BBB1F /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE11C5EFA7D002BBB1F /* intro.png */; };
+		7A748EEB1C5EFA7D002BBB1F /* intro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE21C5EFA7D002BBB1F /* intro@2x.png */; };
+		7A748EEC1C5EFA7D002BBB1F /* intro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE31C5EFA7D002BBB1F /* intro@3x.png */; };
+		7A748EED1C5EFA7D002BBB1F /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE41C5EFA7D002BBB1F /* triangle.png */; };
+		7A748EEE1C5EFA7D002BBB1F /* triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE51C5EFA7D002BBB1F /* triangle@2x.png */; };
+		7A748EEF1C5EFA7D002BBB1F /* triangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A748EE61C5EFA7D002BBB1F /* triangle@3x.png */; };
+		9EF59E9B9D69DEB769A3065C /* Pods_QRGen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433A405E8852918D252AEF3B /* Pods_QRGen.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A748E931C5D7269002BBB1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A748E761C5D7269002BBB1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A748E7D1C5D7269002BBB1F;
+			remoteInfo = QRGen;
+		};
+		7A748E9E1C5D7269002BBB1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A748E761C5D7269002BBB1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A748E7D1C5D7269002BBB1F;
+			remoteInfo = QRGen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		433A405E8852918D252AEF3B /* Pods_QRGen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRGen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D67D34D78FCF76585A14D2 /* Pods-QRGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRGen.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRGen/Pods-QRGen.release.xcconfig"; sourceTree = "<group>"; };
+		7A748E7E1C5D7269002BBB1F /* QRGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A748E811C5D7269002BBB1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A748E831C5D7269002BBB1F /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		7A748E881C5D7269002BBB1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A748E8B1C5D7269002BBB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A748E8D1C5D7269002BBB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A748E921C5D7269002BBB1F /* QRGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A748E961C5D7269002BBB1F /* QRGenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenTests.swift; sourceTree = "<group>"; };
+		7A748E981C5D7269002BBB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A748E9D1C5D7269002BBB1F /* QRGenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRGenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A748EA11C5D7269002BBB1F /* QRGenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenUITests.swift; sourceTree = "<group>"; };
+		7A748EA31C5D7269002BBB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A748EAF1C5D7FD6002BBB1F /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		7A748EBB1C5DAED4002BBB1F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7A748EBD1C5EE0B0002BBB1F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7A748EC21C5EEF63002BBB1F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		7A748ED11C5EF0E9002BBB1F /* logo1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo1@3x.png"; sourceTree = "<group>"; };
+		7A748ED21C5EF0E9002BBB1F /* logo2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo2@3x.png"; sourceTree = "<group>"; };
+		7A748ED31C5EF0E9002BBB1F /* logo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo1@2x.png"; sourceTree = "<group>"; };
+		7A748ED41C5EF0E9002BBB1F /* logo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo2@2x.png"; sourceTree = "<group>"; };
+		7A748ED51C5EF0E9002BBB1F /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		7A748ED61C5EF0E9002BBB1F /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		7A748EDE1C5EFA7D002BBB1F /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line.png; sourceTree = "<group>"; };
+		7A748EDF1C5EFA7D002BBB1F /* Line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line@2x.png"; sourceTree = "<group>"; };
+		7A748EE01C5EFA7D002BBB1F /* Line@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line@3x.png"; sourceTree = "<group>"; };
+		7A748EE11C5EFA7D002BBB1F /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro.png; sourceTree = "<group>"; };
+		7A748EE21C5EFA7D002BBB1F /* intro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro@2x.png"; sourceTree = "<group>"; };
+		7A748EE31C5EFA7D002BBB1F /* intro@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro@3x.png"; sourceTree = "<group>"; };
+		7A748EE41C5EFA7D002BBB1F /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		7A748EE51C5EFA7D002BBB1F /* triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triangle@2x.png"; sourceTree = "<group>"; };
+		7A748EE61C5EFA7D002BBB1F /* triangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triangle@3x.png"; sourceTree = "<group>"; };
+		F6874361A543164BAD8104C9 /* Pods-QRGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRGen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRGen/Pods-QRGen.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A748E7B1C5D7269002BBB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF59E9B9D69DEB769A3065C /* Pods_QRGen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A748E8F1C5D7269002BBB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A748E9A1C5D7269002BBB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		609A44D817304504367EDAA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6874361A543164BAD8104C9 /* Pods-QRGen.debug.xcconfig */,
+				62D67D34D78FCF76585A14D2 /* Pods-QRGen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A748E751C5D7269002BBB1F = {
+			isa = PBXGroup;
+			children = (
+				7A748E801C5D7269002BBB1F /* QRGen */,
+				7A748E951C5D7269002BBB1F /* QRGenTests */,
+				7A748EA01C5D7269002BBB1F /* QRGenUITests */,
+				7A748E7F1C5D7269002BBB1F /* Products */,
+				609A44D817304504367EDAA6 /* Pods */,
+				B2D2EEDB101121B4379429AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A748E7F1C5D7269002BBB1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A748E7E1C5D7269002BBB1F /* QRGen.app */,
+				7A748E921C5D7269002BBB1F /* QRGenTests.xctest */,
+				7A748E9D1C5D7269002BBB1F /* QRGenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A748E801C5D7269002BBB1F /* QRGen */ = {
+			isa = PBXGroup;
+			children = (
+				7A748EC11C5EEF63002BBB1F /* Assets */,
+				7A748EBB1C5DAED4002BBB1F /* Main.storyboard */,
+				7A748EDD1C5EF173002BBB1F /* Views */,
+				7A748E881C5D7269002BBB1F /* Assets.xcassets */,
+				7A748E8A1C5D7269002BBB1F /* LaunchScreen.storyboard */,
+				7A748E8D1C5D7269002BBB1F /* Info.plist */,
+				7A748EAF1C5D7FD6002BBB1F /* Gradient.swift */,
+				7A748E811C5D7269002BBB1F /* AppDelegate.swift */,
+			);
+			path = QRGen;
+			sourceTree = "<group>";
+		};
+		7A748E951C5D7269002BBB1F /* QRGenTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A748E961C5D7269002BBB1F /* QRGenTests.swift */,
+				7A748E981C5D7269002BBB1F /* Info.plist */,
+			);
+			path = QRGenTests;
+			sourceTree = "<group>";
+		};
+		7A748EA01C5D7269002BBB1F /* QRGenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A748EA11C5D7269002BBB1F /* QRGenUITests.swift */,
+				7A748EA31C5D7269002BBB1F /* Info.plist */,
+			);
+			path = QRGenUITests;
+			sourceTree = "<group>";
+		};
+		7A748EC11C5EEF63002BBB1F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7A748EDE1C5EFA7D002BBB1F /* Line.png */,
+				7A748EDF1C5EFA7D002BBB1F /* Line@2x.png */,
+				7A748EE01C5EFA7D002BBB1F /* Line@3x.png */,
+				7A748EE11C5EFA7D002BBB1F /* intro.png */,
+				7A748EE21C5EFA7D002BBB1F /* intro@2x.png */,
+				7A748EE31C5EFA7D002BBB1F /* intro@3x.png */,
+				7A748EE41C5EFA7D002BBB1F /* triangle.png */,
+				7A748EE51C5EFA7D002BBB1F /* triangle@2x.png */,
+				7A748EE61C5EFA7D002BBB1F /* triangle@3x.png */,
+				7A748EC21C5EEF63002BBB1F /* background.jpg */,
+				7A748EC31C5EEF63002BBB1F /* Logo */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7A748EC31C5EEF63002BBB1F /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				7A748ED11C5EF0E9002BBB1F /* logo1@3x.png */,
+				7A748ED21C5EF0E9002BBB1F /* logo2@3x.png */,
+				7A748ED31C5EF0E9002BBB1F /* logo1@2x.png */,
+				7A748ED41C5EF0E9002BBB1F /* logo2@2x.png */,
+				7A748ED51C5EF0E9002BBB1F /* logo1.png */,
+				7A748ED61C5EF0E9002BBB1F /* logo2.png */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
+		7A748EDD1C5EF173002BBB1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A748E831C5D7269002BBB1F /* QRViewController.swift */,
+				7A748EBD1C5EE0B0002BBB1F /* MenuViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B2D2EEDB101121B4379429AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				433A405E8852918D252AEF3B /* Pods_QRGen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A748E7D1C5D7269002BBB1F /* QRGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A748EA61C5D7269002BBB1F /* Build configuration list for PBXNativeTarget "QRGen" */;
+			buildPhases = (
+				23A896230C890CE8F2BC9375 /* Check Pods Manifest.lock */,
+				7A748E7A1C5D7269002BBB1F /* Sources */,
+				7A748E7B1C5D7269002BBB1F /* Frameworks */,
+				7A748E7C1C5D7269002BBB1F /* Resources */,
+				2318FA534A7BFDD0412F70F0 /* Embed Pods Frameworks */,
+				885C10DB6CBCCCE4EB0CA30D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRGen;
+			productName = QRGen;
+			productReference = 7A748E7E1C5D7269002BBB1F /* QRGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A748E911C5D7269002BBB1F /* QRGenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A748EA91C5D7269002BBB1F /* Build configuration list for PBXNativeTarget "QRGenTests" */;
+			buildPhases = (
+				7A748E8E1C5D7269002BBB1F /* Sources */,
+				7A748E8F1C5D7269002BBB1F /* Frameworks */,
+				7A748E901C5D7269002BBB1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A748E941C5D7269002BBB1F /* PBXTargetDependency */,
+			);
+			name = QRGenTests;
+			productName = QRGenTests;
+			productReference = 7A748E921C5D7269002BBB1F /* QRGenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A748E9C1C5D7269002BBB1F /* QRGenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A748EAC1C5D7269002BBB1F /* Build configuration list for PBXNativeTarget "QRGenUITests" */;
+			buildPhases = (
+				7A748E991C5D7269002BBB1F /* Sources */,
+				7A748E9A1C5D7269002BBB1F /* Frameworks */,
+				7A748E9B1C5D7269002BBB1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A748E9F1C5D7269002BBB1F /* PBXTargetDependency */,
+			);
+			name = QRGenUITests;
+			productName = QRGenUITests;
+			productReference = 7A748E9D1C5D7269002BBB1F /* QRGenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A748E761C5D7269002BBB1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = jorgeovalle;
+				TargetAttributes = {
+					7A748E7D1C5D7269002BBB1F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					7A748E911C5D7269002BBB1F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7A748E7D1C5D7269002BBB1F;
+					};
+					7A748E9C1C5D7269002BBB1F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7A748E7D1C5D7269002BBB1F;
+					};
+				};
+			};
+			buildConfigurationList = 7A748E791C5D7269002BBB1F /* Build configuration list for PBXProject "QRGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A748E751C5D7269002BBB1F;
+			productRefGroup = 7A748E7F1C5D7269002BBB1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A748E7D1C5D7269002BBB1F /* QRGen */,
+				7A748E911C5D7269002BBB1F /* QRGenTests */,
+				7A748E9C1C5D7269002BBB1F /* QRGenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A748E7C1C5D7269002BBB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A748EEE1C5EFA7D002BBB1F /* triangle@2x.png in Resources */,
+				7A748EEA1C5EFA7D002BBB1F /* intro.png in Resources */,
+				7A748EE91C5EFA7D002BBB1F /* Line@3x.png in Resources */,
+				7A748ED71C5EF0E9002BBB1F /* logo1@3x.png in Resources */,
+				7A748EEB1C5EFA7D002BBB1F /* intro@2x.png in Resources */,
+				7A748EDC1C5EF0E9002BBB1F /* logo2.png in Resources */,
+				7A748ED91C5EF0E9002BBB1F /* logo1@2x.png in Resources */,
+				7A748EEF1C5EFA7D002BBB1F /* triangle@3x.png in Resources */,
+				7A748EEC1C5EFA7D002BBB1F /* intro@3x.png in Resources */,
+				7A748E8C1C5D7269002BBB1F /* LaunchScreen.storyboard in Resources */,
+				7A748EED1C5EFA7D002BBB1F /* triangle.png in Resources */,
+				7A748EE81C5EFA7D002BBB1F /* Line@2x.png in Resources */,
+				7A748ECA1C5EEF63002BBB1F /* background.jpg in Resources */,
+				7A748EDB1C5EF0E9002BBB1F /* logo1.png in Resources */,
+				7A748EDA1C5EF0E9002BBB1F /* logo2@2x.png in Resources */,
+				7A748EBC1C5DAED4002BBB1F /* Main.storyboard in Resources */,
+				7A748EE71C5EFA7D002BBB1F /* Line.png in Resources */,
+				7A748E891C5D7269002BBB1F /* Assets.xcassets in Resources */,
+				7A748ED81C5EF0E9002BBB1F /* logo2@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A748E901C5D7269002BBB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A748E9B1C5D7269002BBB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2318FA534A7BFDD0412F70F0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRGen/Pods-QRGen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23A896230C890CE8F2BC9375 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		885C10DB6CBCCCE4EB0CA30D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRGen/Pods-QRGen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A748E7A1C5D7269002BBB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A748E841C5D7269002BBB1F /* QRViewController.swift in Sources */,
+				7A748EB01C5D7FD6002BBB1F /* Gradient.swift in Sources */,
+				7A748E821C5D7269002BBB1F /* AppDelegate.swift in Sources */,
+				7A748EBE1C5EE0B0002BBB1F /* MenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A748E8E1C5D7269002BBB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A748E971C5D7269002BBB1F /* QRGenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A748E991C5D7269002BBB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A748EA21C5D7269002BBB1F /* QRGenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A748E941C5D7269002BBB1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A748E7D1C5D7269002BBB1F /* QRGen */;
+			targetProxy = 7A748E931C5D7269002BBB1F /* PBXContainerItemProxy */;
+		};
+		7A748E9F1C5D7269002BBB1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A748E7D1C5D7269002BBB1F /* QRGen */;
+			targetProxy = 7A748E9E1C5D7269002BBB1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A748E8A1C5D7269002BBB1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A748E8B1C5D7269002BBB1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A748EA41C5D7269002BBB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A748EA51C5D7269002BBB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A748EA71C5D7269002BBB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6874361A543164BAD8104C9 /* Pods-QRGen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QRGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A748EA81C5D7269002BBB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D67D34D78FCF76585A14D2 /* Pods-QRGen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QRGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A748EAA1C5D7269002BBB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QRGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRGen.app/QRGen";
+			};
+			name = Debug;
+		};
+		7A748EAB1C5D7269002BBB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QRGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRGen.app/QRGen";
+			};
+			name = Release;
+		};
+		7A748EAD1C5D7269002BBB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QRGenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QRGen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7A748EAE1C5D7269002BBB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QRGenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QRGen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A748E791C5D7269002BBB1F /* Build configuration list for PBXProject "QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A748EA41C5D7269002BBB1F /* Debug */,
+				7A748EA51C5D7269002BBB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A748EA61C5D7269002BBB1F /* Build configuration list for PBXNativeTarget "QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A748EA71C5D7269002BBB1F /* Debug */,
+				7A748EA81C5D7269002BBB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A748EA91C5D7269002BBB1F /* Build configuration list for PBXNativeTarget "QRGenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A748EAA1C5D7269002BBB1F /* Debug */,
+				7A748EAB1C5D7269002BBB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A748EAC1C5D7269002BBB1F /* Build configuration list for PBXNativeTarget "QRGenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A748EAD1C5D7269002BBB1F /* Debug */,
+				7A748EAE1C5D7269002BBB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A748E761C5D7269002BBB1F /* Project object */;
+}
