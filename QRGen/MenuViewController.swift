@@ -7,38 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
+import QRCodeReader.Swift
 
-class MenuViewController: UIViewController {
+class MenuViewController: GenericViewController,QRCodeReaderViewControllerDelegate {
     var container:UIView!
+    lazy var reader = QRCodeReaderViewController(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let bgImageView         = UIImageView(frame: CGRectMake(-120, -120, self.view.frame.width + 240, self.view.frame.height + 240))
-        bgImageView.image       = UIImage(named: "background.jpg")!
-        bgImageView.contentMode = .Left
-        self.view.addSubview(bgImageView)
-        
-        let leftRightMin = CGFloat(-120.0)
-        let leftRightMax = CGFloat(120.0)
-        let upDownMin = CGFloat(-65.0)
-        let upDownMax = CGFloat(65.0)
-        
-        let leftRight = UIInterpolatingMotionEffect(keyPath: "center.x", type:
-            UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
-        leftRight.minimumRelativeValue = leftRightMin
-        leftRight.maximumRelativeValue = leftRightMax
-        
-        let upDown = UIInterpolatingMotionEffect(keyPath: "center.y", type:
-            UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
-        upDown.minimumRelativeValue = upDownMin
-        upDown.maximumRelativeValue = upDownMax
-        
-        let fxGroup = UIMotionEffectGroup()
-        fxGroup.motionEffects = [leftRight, upDown]
-        bgImageView.addMotionEffect(fxGroup)
-        
-        
         container = UIView()
         container.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(container)
@@ -53,6 +30,7 @@ class MenuViewController: UIViewController {
         btnCreate.tag = 2
         btnCreate.translatesAutoresizingMaskIntoConstraints = false
         btnCreate.setImage(UIImage(named: "Btn_create"), forState: .Normal)
+        btnCreate.addTarget(self, action: Selector("createQRCode"), forControlEvents: .TouchUpInside)
         container.addSubview(btnCreate)
         
         let line = UIImageView(image: UIImage(named: "Line"))
@@ -64,6 +42,7 @@ class MenuViewController: UIViewController {
         btnRead.tag = 4
         btnRead.translatesAutoresizingMaskIntoConstraints = false
         btnRead.setImage(UIImage(named: "Btn_read"), forState: .Normal)
+        btnRead.addTarget(self, action: Selector("readQRCode"), forControlEvents: .TouchUpInside)
         container.addSubview(btnRead)
         
         
@@ -78,34 +57,47 @@ class MenuViewController: UIViewController {
     func addConstraints(){
         self.view.addConstraint(NSLayoutConstraint(item: self.container, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.container, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1, constant: 0))
-        container.addConstraint(NSLayoutConstraint(item: self.container, attribute: .Width,   relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 226))
-        container.addConstraint(NSLayoutConstraint(item: self.container, attribute: .Height,  relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 380))
-        
+        self.container.addConstraint(NSLayoutConstraint(item: self.container, attribute: .Width,   relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 226))
+        self.container.addConstraint(NSLayoutConstraint(item: self.container, attribute: .Height,  relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 380))
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(1)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(1)!, attribute: .Top, relatedBy: .Equal, toItem: self.container, attribute: .Top, multiplier: 1, constant: 0))
-        
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(2)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(2)!, attribute: .Top, relatedBy: .Equal, toItem: self.container.viewWithTag(1), attribute: .Bottom, multiplier: 1, constant: 73))
-        
-        
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(3)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(3)!, attribute: .Top, relatedBy: .Equal, toItem: self.container.viewWithTag(2), attribute: .Bottom, multiplier: 1, constant: 32))
-        
-        
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(4)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.container, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.container.viewWithTag(4)!, attribute: .Top, relatedBy: .Equal, toItem: self.container.viewWithTag(3), attribute: .Bottom, multiplier: 1, constant: 32))
-        
-        
         self.view.addConstraint(NSLayoutConstraint(item: self.view.viewWithTag(5)!, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.view.viewWithTag(5)!, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1, constant: -13))
-        
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    
+    func createQRCode(){
+        let view2 = QRViewController()
+        self.navigationController?.pushViewController(view2, animated: false)
+    }
+    
+    func readQRCode(){
+        reader.delegate = self
+        reader.modalPresentationStyle = .FormSheet
+        presentViewController(reader, animated: true, completion: nil)
+    }
+    
+    func reader(reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult){
+        print(result.value.containsString("http"))
+        print(result.value)
+        
+        if let url = NSURL(string: result.value) {
+            reader.dismissViewControllerAnimated(true, completion: nil)
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+    
+    func readerDidCancel(reader: QRCodeReaderViewController) {
+        reader.dismissViewControllerAnimated(true, completion: nil)
     }
 }

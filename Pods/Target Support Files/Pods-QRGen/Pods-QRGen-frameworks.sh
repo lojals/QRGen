@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-QRGen/LiquidFloatingActionButton.framework"
   install_framework "Pods-QRGen/QRCode.framework"
+  install_framework "Pods-QRGen/QRCodeReader.framework"
   install_framework "Pods-QRGen/SAConfettiView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-QRGen/LiquidFloatingActionButton.framework"
   install_framework "Pods-QRGen/QRCode.framework"
+  install_framework "Pods-QRGen/QRCodeReader.framework"
   install_framework "Pods-QRGen/SAConfettiView.framework"
 fi

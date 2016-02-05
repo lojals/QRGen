@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QRCodeReader.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SAConfettiView-SAConfettiView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,27 +42,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>03A366C284F2621F37333C24E504465E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E7DDB6A0B687E1E365A65C8CBF0CE9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2AB9A8A0D2DE68E8B816F76F77A0E80D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2E4A37C88D68A62EA5C1BC7A2A4D19AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ACCBFC87A0818F9397E8528AAC2DC9A1</key>
+		<key>490C62D555D91193760BEF726BD1D658</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B319F647A2CEB2E871A6B2E3E05334F7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C878DAC2C6537EFEE6953F5D2B18FEC3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DFFA4D18A1496A9959093E278EB82FEE</key>
+		<key>B6BB11BA4E4CA5B03DF5CB4A5905CE8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

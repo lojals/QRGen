@@ -8,6 +8,7 @@ target 'QRGen' do
   pod "QRCode", "~> 0.5"
   pod "SAConfettiView"
   pod "LiquidFloatingActionButton"
+  pod "QRCodeReader.swift", "~> 5.3.1"
 end
 
 target 'QRGenTests' do
