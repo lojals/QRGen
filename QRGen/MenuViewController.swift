@@ -77,23 +77,45 @@ class MenuViewController: GenericViewController,QRCodeReaderViewControllerDelega
     
     
     func createQRCode(){
-            let actionSheet = UIAlertController(title: "QR Code type", message: "Choose the QR Code you want to generate", preferredStyle: UIAlertControllerStyle.ActionSheet)
-            let option0 = UIAlertAction(title: "Text/Phone", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in ()})
-            let option1 = UIAlertAction(title: "URL", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in ()})
+        let actionSheet = UIAlertController(title: "QR Code type", message: "Choose the QR Code you want to generate", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let option0 = UIAlertAction(title: "Text/Phone", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in (
+                self.showAlert()
+            )})
+        let option1 = UIAlertAction(title: "URL", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in ()})
+    
+        let option2 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {(actionSheet: UIAlertAction!) in ()})
+    
         
-            let option2 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {(actionSheet: UIAlertAction!) in ()})
         
-            
-            
-            actionSheet.addAction(option0)
-            actionSheet.addAction(option1)
-            actionSheet.addAction(option2)
-            
-            self.presentViewController(actionSheet, animated: true, completion: nil)
+        actionSheet.addAction(option0)
+        actionSheet.addAction(option1)
+        actionSheet.addAction(option2)
+        
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+
+        
+        
         
         
 //        let view2 = QRViewController()
 //        self.navigationController?.pushViewController(view2, animated: false)
+    }
+    
+    func showAlert(){
+        let alertController = UIAlertController(title: "yuhuu", message: "jsgfkb", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addTextFieldWithConfigurationHandler({(txtField: UITextField!) in
+            txtField.placeholder = "I got"
+            txtField.keyboardType = UIKeyboardType.NumberPad
+        })
+        alertController.addAction(UIAlertAction(title: "Submit", style: UIAlertActionStyle.Default,handler: {
+            (alert: UIAlertAction!) in
+            if let textField = alertController.textFields?.first{
+                textField.resignFirstResponder()
+                print(textField.text)
+            }
+        }))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     func readQRCode(){

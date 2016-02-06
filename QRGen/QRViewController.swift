@@ -105,18 +105,10 @@ class QRViewController: GenericViewController {
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .CenterY, relatedBy: .Equal, toItem: self.image, attribute: .CenterY, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .Width, relatedBy: .Equal, toItem: self.image, attribute: .Width, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .Height, relatedBy: .Equal, toItem: self.image, attribute: .Height, multiplier: 1, constant: 0))
-        
-        
-        
         self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .CenterX, relatedBy: .Equal, toItem: self.image2, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .CenterY, relatedBy: .Equal, toItem: self.image2, attribute: .CenterY, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .Width, relatedBy: .Equal, toItem: self.image2, attribute: .Width, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .Height, relatedBy: .Equal, toItem: self.image2, attribute: .Height, multiplier: 1, constant: 0))
-        
-        
-        
-        
-        
         self.view.addConstraint(NSLayoutConstraint(item: self.tapForColor, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: tapForColor, attribute: .Top, relatedBy: .Equal, toItem: self.image2, attribute: .Bottom, multiplier: 1, constant: 10))
         self.view.addConstraint(NSLayoutConstraint(item: self.titleTxt, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
