@@ -13,6 +13,7 @@ class GenericViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let bgImageView         = UIImageView(frame: CGRectMake(-120, -120, self.view.frame.width + 240, self.view.frame.height + 240))
         bgImageView.image       = UIImage(named: "background.jpg")!
         bgImageView.contentMode = .Left
@@ -36,6 +37,11 @@ class GenericViewController: UIViewController {
         let fxGroup = UIMotionEffectGroup()
         fxGroup.motionEffects = [leftRight, upDown]
         bgImageView.addMotionEffect(fxGroup)
+        
+        let triangle = UIImageView(image: UIImage(named: "triangle"))
+        triangle.frame.origin.y = 0
+        triangle.center.x = self.view.center.x
+        self.view.addSubview(triangle)
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

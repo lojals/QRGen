@@ -14,6 +14,7 @@ class QRViewController: GenericViewController {
 
     var image:UIImageView!
     var image2:UIImageView!
+    var btnChangeColors:UIButton!
     var qrCode:QRCode!
     var confettiView:SAConfettiView!
     var tapForColor:UIImageView!
@@ -21,27 +22,40 @@ class QRViewController: GenericViewController {
     var shareBtn:UIButton!
     var backBtn:UIButton!
     
+    var paletteCounter:Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url     = NSURL(string: "d")
-        qrCode      = QRCode(url!)
-        qrCode.size = CGSize(width: 320, height: 320)
-        qrCode.color = CIColor(color: UIColor.clearColor())
+        paletteCounter = 0
+
+        let url        = NSURL(string: "http://www.fubiz.net/2016/01/07/the-minimalist-color-palettes-of-2015/colorpalette2015-00/")
+        qrCode         = QRCode(url!)
+        qrCode.size    = CGSize(width: 1000, height: 1000)
+        qrCode.color   = CIColor(color: UIColor.clearColor())
         
         image = UIImageView(image: qrCode?.image)
+        
+        
         image.translatesAutoresizingMaskIntoConstraints = false
 
-        
         image2 = UIImageView(frame: CGRectMake(0, 0, 320, 320))
         image2.translatesAutoresizingMaskIntoConstraints = false
-        image2.layerGradient()
+        image2.layerGradient(paletteCounter)
         image2.layer.masksToBounds = true
         image2.alpha = 1
         self.view.addSubview(image2)
         self.view.addSubview(image)
+
+        
+        btnChangeColors = UIButton()
+        btnChangeColors.translatesAutoresizingMaskIntoConstraints = false
+        btnChangeColors.addTarget(self, action: Selector("changeColors"), forControlEvents: .TouchUpInside)
+        self.view.addSubview(btnChangeColors)
+        
         
         confettiView = SAConfettiView(frame: self.view.bounds)
+        confettiView.userInteractionEnabled = false
         self.view.addSubview(confettiView)
         confettiView.startConfetti()
 
@@ -91,6 +105,18 @@ class QRViewController: GenericViewController {
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .CenterY, relatedBy: .Equal, toItem: self.image, attribute: .CenterY, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .Width, relatedBy: .Equal, toItem: self.image, attribute: .Width, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .Height, relatedBy: .Equal, toItem: self.image, attribute: .Height, multiplier: 1, constant: 0))
+        
+        
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .CenterX, relatedBy: .Equal, toItem: self.image2, attribute: .CenterX, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .CenterY, relatedBy: .Equal, toItem: self.image2, attribute: .CenterY, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .Width, relatedBy: .Equal, toItem: self.image2, attribute: .Width, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: self.btnChangeColors, attribute: .Height, relatedBy: .Equal, toItem: self.image2, attribute: .Height, multiplier: 1, constant: 0))
+        
+        
+        
+        
+        
         self.view.addConstraint(NSLayoutConstraint(item: self.tapForColor, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: tapForColor, attribute: .Top, relatedBy: .Equal, toItem: self.image2, attribute: .Bottom, multiplier: 1, constant: 10))
         self.view.addConstraint(NSLayoutConstraint(item: self.titleTxt, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
@@ -106,7 +132,12 @@ class QRViewController: GenericViewController {
     }
     
     func changeColors(){
-    
+        if paletteCounter < 12 {
+            paletteCounter = paletteCounter + 1
+        }else{
+            paletteCounter = 0
+        }
+        image2.layerGradient(paletteCounter)
     }
     
     func shareIt(){

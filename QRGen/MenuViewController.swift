@@ -77,8 +77,23 @@ class MenuViewController: GenericViewController,QRCodeReaderViewControllerDelega
     
     
     func createQRCode(){
-        let view2 = QRViewController()
-        self.navigationController?.pushViewController(view2, animated: false)
+            let actionSheet = UIAlertController(title: "QR Code type", message: "Choose the QR Code you want to generate", preferredStyle: UIAlertControllerStyle.ActionSheet)
+            let option0 = UIAlertAction(title: "Text/Phone", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in ()})
+            let option1 = UIAlertAction(title: "URL", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in ()})
+        
+            let option2 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {(actionSheet: UIAlertAction!) in ()})
+        
+            
+            
+            actionSheet.addAction(option0)
+            actionSheet.addAction(option1)
+            actionSheet.addAction(option2)
+            
+            self.presentViewController(actionSheet, animated: true, completion: nil)
+        
+        
+//        let view2 = QRViewController()
+//        self.navigationController?.pushViewController(view2, animated: false)
     }
     
     func readQRCode(){
