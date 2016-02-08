@@ -79,44 +79,59 @@ class MenuViewController: GenericViewController,QRCodeReaderViewControllerDelega
     func createQRCode(){
         let actionSheet = UIAlertController(title: "QR Code type", message: "Choose the QR Code you want to generate", preferredStyle: UIAlertControllerStyle.ActionSheet)
         let option0 = UIAlertAction(title: "Text/Phone", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in (
-                self.showAlert()
+                self.showAlertText()
             )})
-        let option1 = UIAlertAction(title: "URL", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in ()})
+        let option1 = UIAlertAction(title: "URL", style: UIAlertActionStyle.Default, handler: {(actionSheet: UIAlertAction!) in (
+                self.showAlertURL()
+        )})
     
         let option2 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {(actionSheet: UIAlertAction!) in ()})
-    
-        
-        
         actionSheet.addAction(option0)
         actionSheet.addAction(option1)
         actionSheet.addAction(option2)
-        
         self.presentViewController(actionSheet, animated: true, completion: nil)
-
-        
-        
-        
-        
-//        let view2 = QRViewController()
-//        self.navigationController?.pushViewController(view2, animated: false)
     }
     
-    func showAlert(){
-        let alertController = UIAlertController(title: "yuhuu", message: "jsgfkb", preferredStyle: UIAlertControllerStyle.Alert)
+    func showAlertText(){
+        let alertController = UIAlertController(title: "QRCode Text", message: "Enter your text/phone to generate your QR Code", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addTextFieldWithConfigurationHandler({(txtField: UITextField!) in
-            txtField.placeholder = "I got"
-            txtField.keyboardType = UIKeyboardType.NumberPad
+            txtField.placeholder = "Bla bla bla"
+            txtField.keyboardType = UIKeyboardType.ASCIICapable
         })
-        alertController.addAction(UIAlertAction(title: "Submit", style: UIAlertActionStyle.Default,handler: {
+        alertController.addAction(UIAlertAction(title: "Generate", style: UIAlertActionStyle.Default,handler: {
             (alert: UIAlertAction!) in
-            if let textField = alertController.textFields?.first{
-                textField.resignFirstResponder()
-                print(textField.text)
+            if let text = alertController.textFields?.first?.text{
+                let QRView = QRViewController(text: text, type: 1)
+                self.navigationController?.pushViewController(QRView, animated: false)
             }
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel,handler: {
+            (alert: UIAlertAction!) in
         }))
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    
+    func showAlertURL(){
+        let alertController = UIAlertController(title: "QRCode URL", message: "Enter your url to generate your QR Code", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addTextFieldWithConfigurationHandler({(txtField: UITextField!) in
+            txtField.placeholder = "http://example.com"
+            txtField.keyboardType = UIKeyboardType.ASCIICapable
+        })
+        alertController.addAction(UIAlertAction(title: "Generate", style: UIAlertActionStyle.Default,handler: {
+            (alert: UIAlertAction!) in
+            if let text = alertController.textFields?.first?.text{
+                let QRView = QRViewController(text: text, type: 0)
+                self.navigationController?.pushViewController(QRView, animated: false)
+            }
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel,handler: {
+            (alert: UIAlertAction!) in
+        }))
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     
     func readQRCode(){
         reader.delegate = self
@@ -125,12 +140,17 @@ class MenuViewController: GenericViewController,QRCodeReaderViewControllerDelega
     }
     
     func reader(reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult){
-        print(result.value.containsString("http"))
         print(result.value)
-        
-        if let url = NSURL(string: result.value) {
+        if result.value.containsString("http"){
+            if let url = NSURL(string: result.value) {
+                reader.dismissViewControllerAnimated(true, completion: nil)
+                UIApplication.sharedApplication().openURL(url)
+            }
+        }else{
             reader.dismissViewControllerAnimated(true, completion: nil)
-            UIApplication.sharedApplication().openURL(url)
+            let textView = TextViewController()
+            textView.txt = result.value
+            self.navigationController?.pushViewController(textView, animated: true)
         }
     }
     

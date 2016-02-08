@@ -24,15 +24,33 @@ class QRViewController: GenericViewController {
     
     var paletteCounter:Int!
     
+    let text:String
+    let type:Int
+    
+    init(text:String, type:Int){
+        self.text = text
+        self.type = type
+        super.init(nibName: nil, bundle: nil)
+        paletteCounter = 0
+        if self.type == 0 {
+            let url = NSURL(string: text)
+            qrCode  = QRCode(url!)
+        } else{
+            qrCode  = QRCode(text)
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.text = "Test"
+        self.type = 0
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        paletteCounter = 0
-
-        let url        = NSURL(string: "http://www.fubiz.net/2016/01/07/the-minimalist-color-palettes-of-2015/colorpalette2015-00/")
-        qrCode         = QRCode(url!)
         qrCode.size    = CGSize(width: 1000, height: 1000)
-        qrCode.color   = CIColor(color: UIColor.clearColor())
+        qrCode.color   = CIColor(color: UIColor(red:0.13, green:0.13, blue:0.13, alpha:1).colorWithAlphaComponent(0.9))
+        qrCode.backgroundColor = CIColor(color: UIColor.clearColor())
         
         image = UIImageView(image: qrCode?.image)
         
@@ -124,7 +142,7 @@ class QRViewController: GenericViewController {
     }
     
     func changeColors(){
-        if paletteCounter < 12 {
+        if paletteCounter < 14 {
             paletteCounter = paletteCounter + 1
         }else{
             paletteCounter = 0
@@ -145,7 +163,6 @@ class QRViewController: GenericViewController {
         activity.excludedActivityTypes = [UIActivityTypeAirDrop]
         self.presentViewController(activity, animated: true) { () -> Void in
         }
-        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

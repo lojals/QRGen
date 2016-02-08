@@ -13,6 +13,10 @@ class GenericViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let transition = CATransition()
+        transition.duration = 0.2
+        transition.type = kCATransitionFade
+        self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
         
         let bgImageView         = UIImageView(frame: CGRectMake(-120, -120, self.view.frame.width + 240, self.view.frame.height + 240))
         bgImageView.image       = UIImage(named: "background.jpg")!

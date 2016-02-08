@@ -54,6 +54,10 @@
 		7A9BECCA1C64505C00697C30 /* Btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BECC71C64505C00697C30 /* Btn_back.png */; };
 		7A9BECCB1C64505C00697C30 /* Btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BECC81C64505C00697C30 /* Btn_back@2x.png */; };
 		7A9BECCC1C64505C00697C30 /* Btn_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BECC91C64505C00697C30 /* Btn_back@3x.png */; };
+		7A9BED1D1C682EED00697C30 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BED1C1C682EED00697C30 /* TextViewController.swift */; };
+		7A9BED211C6834A900697C30 /* Btn_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BED1E1C6834A900697C30 /* Btn_copy.png */; };
+		7A9BED221C6834A900697C30 /* Btn_copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BED1F1C6834A900697C30 /* Btn_copy@2x.png */; };
+		7A9BED231C6834A900697C30 /* Btn_copy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BED201C6834A900697C30 /* Btn_copy@3x.png */; };
 		9EF59E9B9D69DEB769A3065C /* Pods_QRGen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433A405E8852918D252AEF3B /* Pods_QRGen.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +134,10 @@
 		7A9BECC71C64505C00697C30 /* Btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_back.png; sourceTree = "<group>"; };
 		7A9BECC81C64505C00697C30 /* Btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn_back@2x.png"; sourceTree = "<group>"; };
 		7A9BECC91C64505C00697C30 /* Btn_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn_back@3x.png"; sourceTree = "<group>"; };
+		7A9BED1C1C682EED00697C30 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		7A9BED1E1C6834A900697C30 /* Btn_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Btn_copy.png; sourceTree = "<group>"; };
+		7A9BED1F1C6834A900697C30 /* Btn_copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn_copy@2x.png"; sourceTree = "<group>"; };
+		7A9BED201C6834A900697C30 /* Btn_copy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn_copy@3x.png"; sourceTree = "<group>"; };
 		F6874361A543164BAD8104C9 /* Pods-QRGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRGen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRGen/Pods-QRGen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +234,9 @@
 		7A748EC11C5EEF63002BBB1F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7A9BED1E1C6834A900697C30 /* Btn_copy.png */,
+				7A9BED1F1C6834A900697C30 /* Btn_copy@2x.png */,
+				7A9BED201C6834A900697C30 /* Btn_copy@3x.png */,
 				7A9BECC71C64505C00697C30 /* Btn_back.png */,
 				7A9BECC81C64505C00697C30 /* Btn_back@2x.png */,
 				7A9BECC91C64505C00697C30 /* Btn_back@3x.png */,
@@ -281,6 +292,7 @@
 				7A748E831C5D7269002BBB1F /* QRViewController.swift */,
 				7A748EBD1C5EE0B0002BBB1F /* MenuViewController.swift */,
 				7A9BECB31C6437A000697C30 /* GenericViewController.swift */,
+				7A9BED1C1C682EED00697C30 /* TextViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -372,6 +384,7 @@
 				TargetAttributes = {
 					7A748E7D1C5D7269002BBB1F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QF2P6LAFBK;
 					};
 					7A748E911C5D7269002BBB1F = {
 						CreatedOnToolsVersion = 7.2;
@@ -431,6 +444,7 @@
 				7A9BECC61C644D2100697C30 /* Indication@3x.png in Resources */,
 				7A9BECBF1C644BBC00697C30 /* Btn_share@2x.png in Resources */,
 				7A748EEC1C5EFA7D002BBB1F /* intro@3x.png in Resources */,
+				7A9BED211C6834A900697C30 /* Btn_copy.png in Resources */,
 				7A748EF71C5F01D0002BBB1F /* Btn_create@2x.png in Resources */,
 				7A748F011C5F049C002BBB1F /* cc.png in Resources */,
 				7A748E8C1C5D7269002BBB1F /* LaunchScreen.storyboard in Resources */,
@@ -441,8 +455,10 @@
 				7A9BECCB1C64505C00697C30 /* Btn_back@2x.png in Resources */,
 				7A748EF81C5F01D0002BBB1F /* Btn_create@3x.png in Resources */,
 				7A748ECA1C5EEF63002BBB1F /* background.jpg in Resources */,
+				7A9BED231C6834A900697C30 /* Btn_copy@3x.png in Resources */,
 				7A748EDB1C5EF0E9002BBB1F /* logo1.png in Resources */,
 				7A748EDA1C5EF0E9002BBB1F /* logo2@2x.png in Resources */,
+				7A9BED221C6834A900697C30 /* Btn_copy@2x.png in Resources */,
 				7A748EFF1C5F049C002BBB1F /* cc@3x.png in Resources */,
 				7A748EBC1C5DAED4002BBB1F /* Main.storyboard in Resources */,
 				7A748EE71C5EFA7D002BBB1F /* Line.png in Resources */,
@@ -525,6 +541,7 @@
 				7A748EB01C5D7FD6002BBB1F /* Gradient.swift in Sources */,
 				7A748E821C5D7269002BBB1F /* AppDelegate.swift in Sources */,
 				7A748EBE1C5EE0B0002BBB1F /* MenuViewController.swift in Sources */,
+				7A9BED1D1C682EED00697C30 /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,11 +676,12 @@
 			baseConfigurationReference = F6874361A543164BAD8104C9 /* Pods-QRGen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QRGen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -672,11 +690,12 @@
 			baseConfigurationReference = 62D67D34D78FCF76585A14D2 /* Pods-QRGen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QRGen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jorgeovalle.QRGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
