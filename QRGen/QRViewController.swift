@@ -117,8 +117,12 @@ class QRViewController: GenericViewController {
     func createConstraints(){
         self.view.addConstraint(NSLayoutConstraint(item: self.image, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1, constant: -60))
-        image.addConstraint(NSLayoutConstraint(item: image, attribute: .Width, relatedBy: .LessThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 300))
-        image.addConstraint(NSLayoutConstraint(item: image, attribute: .Height, relatedBy: .LessThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 300))
+        
+        
+        self.view.addConstraint(NSLayoutConstraint(item: image, attribute: .Width, relatedBy: .LessThanOrEqual, toItem: self.view, attribute: .Width, multiplier: 0.6, constant: 0))
+        
+        
+        self.view.addConstraint(NSLayoutConstraint(item: image, attribute: .Height, relatedBy: .Equal, toItem: image, attribute: .Width, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .CenterX, relatedBy: .Equal, toItem: self.image, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .CenterY, relatedBy: .Equal, toItem: self.image, attribute: .CenterY, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: self.image2, attribute: .Width, relatedBy: .Equal, toItem: self.image, attribute: .Width, multiplier: 1, constant: 0))
